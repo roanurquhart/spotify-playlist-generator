@@ -18,7 +18,6 @@ class App extends React.Component {
             headers: {'Authorization': 'Bearer ' + accessToken}
         }).then(response => response.json())
         .then(data => this.setState({name: data.name}))
-        
     }
 
     render() {
