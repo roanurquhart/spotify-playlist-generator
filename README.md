@@ -1,6 +1,3 @@
-# `Spotify Playlist Generator`
-A full stack application that leverages the Spotify API to create interesting playlists.
-
 # Quick Start Guide
 There are a few steps you need to perform in order to start using the `Spotify Playlist Generator`.
 
