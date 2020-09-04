@@ -23,13 +23,13 @@ Once all of these steps are completed, the `Spotify Playlist Generator` should b
 
 # Contributors
 
-## [Roan Urquhart](https://github.com/roanurquhart)
+## [Roan Urquhart](https://github.com/roanurquhart)  
  ![Roan](images/roanurquhart.jpg)
  My playlists are too strong for you traveler  
 
- ## [Nathan Urquhart](https://github.com/Nurquhart)
+ ## [Nathan Urquhart](https://github.com/Nurquhart)  
  {*insert image here*}
 
- ## [Andrew Marsh](https://github.com/marshandrewg)
+ ## [Andrew Marsh](https://github.com/marshandrewg)  
 {*insert image here*}
 
