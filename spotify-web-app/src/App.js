@@ -7,28 +7,29 @@ class App extends React.Component {
         super(props);
         this.state = {
           name: '',
-          accessToken:''
         };
     }
 
     getRequest() {
         //let accessToken =  new URLSearchParams(window.location.search).get('access_token')
         let artistID = '1z4g3DjTBBZKhvAroFlhOM'
+        console.log(this.accessToken)
         fetch('https://api.spotify.com/v1/artists/' + artistID, {
-            headers: {'Authorization': 'Bearer ' + this.state.accessToken}
+            headers: {'Authorization': 'Bearer ' + this.accessToken}
         }).then(response => response.json())
         .then(data => this.setState({name: data.name}))
 
-        //<h2>{this.state.name}</h2>
+        //<h2>{this.state.name}</h2>spotify:artist:1z4g3DjTBBZKhvAroFlhOM
     }
     componentDidMount() {
         let access = new URLSearchParams(window.location.search).get('access_token')
-        this.setState({accessToken: access ? access : ''})
-        console.log(this.state.accessToken)
+        this.accessToken = access ? access : ''
+        console.log(this.accessToken)
+        this.getRequest()
     }
 
     render() {
-        return this.state.accessToken === '' ? (
+        return this.accessToken === '' ? (
             <div className="App">
                 <h1>Spotify Playlist Generator</h1>
                 <LoginButton/>
