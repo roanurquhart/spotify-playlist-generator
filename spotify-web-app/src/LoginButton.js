@@ -1,12 +1,10 @@
 import React from 'react';
 import './index.css';
-//import { Redirect } from "react-router-dom";
 
 class LoginButton extends React.Component {
     constructor (props) {
         super(props);
         this.state = {
-          name: '',
         };
     }
 
